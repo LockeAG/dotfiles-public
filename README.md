@@ -5,9 +5,10 @@ This repository contains my personal dotfiles. The first content shared here is 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-   - [Alacritty](#alacritty)
-     - [Themes](#themes)
-     - [Keybindings](#keybindings)
+
+- [Alacritty](#alacritty)
+- [Themes](#themes)
+- [Keybindings](#keybindings)
 
 ## Introduction
 
