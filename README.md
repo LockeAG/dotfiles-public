@@ -19,7 +19,7 @@ The configuration for Alacritty is stored in the `.alacritty` directory.
 
 Share screenshots:
 
-![Alacritty](.screenshots/dotfilea-1.png)
+![Alacritty](.screenshots/dotfiles-1.png)
 
 #### Themes
 
