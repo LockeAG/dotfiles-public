@@ -1,0 +1,38 @@
+# Simple Tokyo Night Theme for Alacritty
+
+# Default colors
+[colors.primary]
+background = "#1a1b26" # Darker background
+foreground = "#a9b1d6" # Light foreground
+
+# Normal colors
+[colors.normal]
+black = "#32344a"
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#a9b1d6"
+
+# Bright colors
+[colors.bright]
+black = "#444b6a"
+red = "#ff7a93"
+green = "#b9f27c"
+yellow = "#ff9e64"
+blue = "#7da6ff"
+magenta = "#bb9af7"
+cyan = "#7dcfff"
+white = "#c0caf5"
+
+# Cursor colors
+[colors.cursor]
+text = "#1a1b26"   # Dark cursor text (background color)
+cursor = "#c0caf5" # Light cursor color
+
+# Selection colors
+[colors.selection]
+text = "#1a1b26"       # Dark text for selected text (background color)
+background = "#33467c" # Darker blue selection background
