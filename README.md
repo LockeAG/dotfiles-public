@@ -1,12 +1,13 @@
 # Dotfiles
 
-This repository contains my personal dotfiles. The first content shared here is the configuration for Alacritty.
+This repository contains my personal dotfiles.
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 
 - [Alacritty](#alacritty)
+- [Wezterm](#wezterm)
 - [Themes](#themes)
 - [Keybindings](#keybindings)
 
@@ -21,6 +22,28 @@ The configuration for Alacritty is stored in the `.alacritty` directory.
 Share screenshots:
 
 ![Alacritty](.screenshots/dotfiles-1.png)
+
+### Wezterm
+
+The configuration for Wezterm is stored in the `.wezterm` directory.
+
+### Tmux
+
+The configuration for Tmux is stored in the `.tmux` directory.
+
+### Zsh
+
+The configuration for Zsh is stored in the `.zsh` directory.
+
+### Aerospace
+
+The configuration for Aerospace is stored in the `.aerospace` directory.
+
+It is cool, but I don't use it. Is a good option for those who want to use it.
+
+### Neovim
+
+The configuration for Neovim is stored in the `.config/nvim` directory.
 
 #### Themes
 

@@ -1,0 +1,133 @@
+
+# Start AeroSpace at login
+start-at-login = true
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+accordion-padding = 20
+
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+key-mapping.preset = 'qwerty'
+
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+[gaps]
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
+
+[mode.main.binding]
+alt-slash = 'layout tiles horizontal vertical'
+alt-comma = 'layout accordion horizontal vertical'
+
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+alt-shift-minus = 'resize smart -50'
+alt-shift-equal = 'resize smart +50'
+
+# A - Arc Browser
+alt-1 = 'workspace A'
+# Terminal WezTerm, Alacritty or Kitty
+alt-2 = 'workspace T'
+# B - Chrome Browser
+alt-3 = 'workspace B'
+# F - Finder
+alt-4 = 'workspace F'
+# Notion Calendar
+alt-5 = 'workspace N'
+# Slack
+alt-6 = 'workspace S'
+# ChatGPT
+alt-7 = 'workspace G'
+# Apple Music
+alt-8 = 'workspace M'
+# Messaging
+alt-9 = 'workspace W'
+
+
+alt-shift-1 = 'move-node-to-workspace A'
+alt-shift-2 = 'move-node-to-workspace T'
+alt-shift-3 = 'move-node-to-workspace B'
+alt-shift-4 = 'move-node-to-workspace F'
+alt-shift-5 = 'move-node-to-workspace N'
+alt-shift-6 = 'move-node-to-workspace S'
+alt-shift-7 = 'move-node-to-workspace G'
+alt-shift-8 = 'move-node-to-workspace M'
+alt-shift-9 = 'move-node-to-workspace W'
+
+alt-shift-m = 'fullscreen'
+
+
+alt-tab = 'workspace-back-and-forth'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+alt-shift-semicolon = 'mode service'
+
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main'] # reset layout
+f = [
+  'layout floating tiling',
+  'mode main',
+] # Toggle between floating and tiling layout
+backspace = ['close-all-windows-but-current', 'mode main']
+
+alt-shift-h = ['join-with left', 'mode main']
+alt-shift-j = ['join-with down', 'mode main']
+alt-shift-k = ['join-with up', 'mode main']
+alt-shift-l = ['join-with right', 'mode main']
+
+# Set Applications Conditionals
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace A'
+
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+if.app-id = 'com.cron.electron'
+run = 'move-node-to-workspace N'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'com.openai.chat'
+run = 'move-node-to-workspace G'
+
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = ['layout floating', 'move-node-to-workspace W']
